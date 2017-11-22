@@ -111,6 +111,7 @@ class PD5packet:
         water_mass_error = (DVLserialPacket[85]<<24)+(DVLserialPacket[84]<<16)+(DVLserialPacket[83]<<8)+DVLserialPacket[82]
         
         checksum = (DVLserialPacket[87]<<8)+DVLserialPacket[86]
+        return PD5packet
 
     def PD5datalist(self, PD5packet):
         
